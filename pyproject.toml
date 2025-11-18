@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "muelless_diffusion2d"
+authors = [
+    {name = "Silas Müller", email = "st187141@stud.uni-stuttgart.de"},
+]
+version = "0.0.3"
+description = "This Python package solves the 2D heat diffusion equiation and plots the result."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["solver", "diffusion", "2d"]
+license = { text = "MIT" }
+dependencies = [
+    "numpy", "matplotlib",
+]
+
+[tool.setuptools]
+packages = ["muelless_diffusion2d"]
